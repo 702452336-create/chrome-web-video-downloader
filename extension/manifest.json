@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "网页视频下载与抽帧",
+  "version": "1.0.0",
+  "description": "下载当前页面可见的视频，或发送给本机 yt-dlp/Instaloader 服务处理。",
+  "permissions": ["activeTab", "downloads", "scripting", "storage"],
+  "host_permissions": ["http://127.0.0.1:17832/*"],
+  "action": {
+    "default_title": "网页视频下载与抽帧",
+    "default_popup": "popup.html"
+  }
+}

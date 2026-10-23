@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="popup.css">
+  <title>网页视频下载</title>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="mark">▶</span>
+      <div><h1>网页视频下载</h1><p id="host">正在读取当前页面…</p></div>
+    </header>
+
+    <section>
+      <button id="scan" class="primary">扫描当前页面</button>
+      <div id="results" class="results"></div>
+    </section>
+
+    <section class="local">
+      <div class="row"><strong>本机增强下载</strong><span id="service" class="badge">检测中</span></div>
+      <label><input id="frames" type="checkbox" checked> 下载后提取关键帧</label>
+      <label><input id="cookies" type="checkbox"> 使用 Chrome 登录 Cookie</label>
+      <label class="field">Instagram 用户名（已有本地会话时）
+        <input id="instagramUser" type="text" autocomplete="off" placeholder="可留空">
+      </label>
+      <button id="localDownload">交给本机下载器</button>
+    </section>
+
+    <p id="status" role="status"></p>
+    <footer>仅下载你有权访问的内容；不绕过 DRM、验证码或付费墙。</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
